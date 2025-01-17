@@ -37,5 +37,6 @@ marta.on('name', () => {
 
 });
 
+//emit 
 simon.emit('name');
 marta.emit('name');
