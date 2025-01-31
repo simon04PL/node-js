@@ -1,0 +1,15 @@
+{
+  "name": "node-js-tutorial-1",
+  "version": "1.0.0",
+  "description": "It is node for traning to tree company",
+  "main": "1-exports.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tree",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "lodash": "^4.17.21"
+  }
+}
