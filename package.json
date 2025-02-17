@@ -9,7 +9,9 @@
   "author": "Tree",
   "license": "ISC",
   "dependencies": {
+    "body": "^5.1.0",
     "express": "^4.21.2",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "parser": "^0.1.4"
   }
 }
