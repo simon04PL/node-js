@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     console.log('Received body:', req.body);
 
-    // Sprawdzenie czy req.body jest tablicą
     let parsedBody;
     if (Array.isArray(req.body)) {
         parsedBody = req.body.reduce((acc, item) => {
