@@ -3,14 +3,17 @@ const path = require('path');
 const Joi = require('joi');
 const bodyParser = require('body-parser');
 const app = express();
-
+// serving static files from the static folder
 app.use('/public', express.static(path.join(__dirname, 'static')));
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+//download login view file to homepage
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'static', 'login.html'));
 });
+
 
 app.post('/', (req, res) => {
     console.log('Received body:', req.body);
@@ -43,6 +46,7 @@ app.post('/', (req, res) => {
     res.send('Success');
 });
 
+//load a site to server on port 8000
 app.listen(8000, () => {
     console.log('Server running on http://localhost:8000');
 });

@@ -20,6 +20,8 @@ const server = http.createServer((req, res) => {
     }
 });
 
+//host server on port 8000
+
 server.listen(8000, () => {
     console.log('Server is listening on port 8000');
 });
