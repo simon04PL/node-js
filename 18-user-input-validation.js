@@ -35,8 +35,10 @@ const schema = Joi.object().keys({
     preferences : preferencesSchema
 });
 
+//check if data is validated
 const { error, value } = schema.validate(userInput); 
 
+//give feedback
 if (error) {
     console.log(error);
 } else {
